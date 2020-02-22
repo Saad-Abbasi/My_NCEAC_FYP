@@ -1,0 +1,17 @@
+.bg{
+    height: 600px;
+    width: 1349px;
+    background-size: cover;
+    background: url(/assets/images/teacher.jpg);
+}
+table{
+    background-color:rgba(0, 0, 0, 0.568);
+    
+    
+}
+td{
+    font: outline;
+    color:whitesmoke;
+    font-family:  'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+}

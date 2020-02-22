@@ -1,0 +1,49 @@
+.pad,.container{
+    padding-top: 10px;
+}
+.panel-title{
+    text-align: center;
+}
+.link{
+    text-align: right;
+}
+i{
+    background-color: aqua;
+}
+
+.avtar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* background-image: url(/assets/images/login.png); */
+    
+    
+}
+img{
+    height: 0%;
+    width: 100%;
+}
+.bgstyle{
+    background-repeat: no-repeat;
+    background-image: url(/assets/images/fluid.jpg);
+    background-size: 100%;
+    height:600px;
+    background-color:gray;
+}
+.cntnr{
+    background-repeat: no-repeat;
+    background-image: url(/assets/images/cntnr.jpg);
+    background-size: 100%;
+    height: 100%;
+
+}
+.form-control{
+    background: #000;
+    color: beige;
+}
+button{
+    float:left;
+}

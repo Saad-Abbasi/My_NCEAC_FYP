@@ -1,0 +1,139 @@
+<div class="container-flud bg-dark">
+    <nav class="navbar navbar-expand-lg  bg-secondary text-light navbar-dark   mt-2">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <!-- <a class="nav-link" routerLink="/t_home">Home</a> -->
+                </li>
+
+            </ul>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item mr-5 pr-5 pl-5 bg-info text-light">
+                <!-- <a class="nav-link text-light" routerLink="/t_home">Home</a> -->
+            </li>
+
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item active">
+                <a class="nav-link fa fa-sign-out" routerLink="/login">logout</a>
+            </li>
+
+
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="row pt-3 pb-5 ">
+            <div class="col-4 ">
+                <div class="card bg-success text-white" style="width: 20rem;">
+                <img class="card-img-top img pb-2"  src="{{teacher?.t_p_img}}" alt="Card image cap"
+                        style="height: 15rem;">
+                    <button type="button" class="btn cardbg btn-sm  text-light text-center "
+                        (click)="editTeacher(teacher._id)">Update Profile</button>
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">Update Profile</h5> -->
+                        <table class="table table-sm text-light" ngon>
+                            <tr>
+                                <th>Name</th>
+                                <td>{{teacher?.t_name}}</td>
+                            </tr>
+                            <tr>
+                                <th>Designation</th>
+                                <td>{{teacher?.t_desig}}</td>
+                            </tr>
+                            <tr>
+                                <th>Qualification</th>
+                                <td>{{teacher?.t_quali}}</td>
+                            </tr>
+                            <tr>
+                                <th>Email</th>
+                                <td>{{teacher?.t_email}}</td>
+                            </tr>
+                            <tr>
+                                <th>Address</th>
+                                <td>{{teacher?.t_address}}</td>
+                            </tr>
+                            <tr>
+                                <th>Phone</th>
+                                <td>{{teacher?.t_phone}}</td>
+                            </tr>
+                            <tr>
+                                <th>Gender</th>
+                                <td>{{teacher?.t_gender}}</td>
+                            </tr>
+                            <tr>
+                                <th>Dob</th>
+                                <td>{{teacher?.t_dob|date}}</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Teacher Perform and Evaluation -->
+
+            <div class="col-sm-8 ">
+                <div class="row">
+                    <div class="col-8 ">
+                            <div class="card-header text-light text-center bg-success font-weight-bold">Registered Courses </div>
+                    </div>
+                    <div class="col-4  text-right">
+                            <button type="button" class="  ml-3 btn btn-danger btn-lg text-center"
+                                                (click)="showPeroforma(teacher._id)">Fill Performa</button>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-12">
+
+                        <div class="card mt-3" *ngFor=" let cours of teacher?.courses">
+                            <div class="card-header bg-warning text-light">
+                                <h5>{{cours?.c_title}}</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="text-right">
+                                    <button class="btn btn-danger bg-warning borderd-1px"(click)="deleteCourse(cours?._id)">Delete Course</button>
+                                </div>
+                                <table class="table">
+                                    <tr>
+                                        <th>Session</th>
+                                        <td>{{cours?.session}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Semester</th>
+                                        <td>{{cours?.semester}}</td>
+                                       
+                                    </tr>
+                                    <tr>
+                                        <th>Course Code</th>
+                                        <td> {{cours?.c_code}}</td>
+                                        <td class="text-right"> <button type="button" class="btn btn-success btn-sm"
+                                                (click)="dailyTopic(cours._id)">Evaluate Course</button></td>
+                                        <td class="text-right"> <button type="button" class="btn btn-primary btn-sm"
+                                                (click)="generateReport(cours._id)">Complete Report</button></td>
+                                         <td class="text-right"> <button type="button" class="btn btn-primary btn-sm"
+                                                    (click)="generateTopicReport(cours._id)">Topic Report</button></td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                </div>
+
+
+            </div>
+            <div class="col"></div>
+
+        </div>
+    </div>
+</div>

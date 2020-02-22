@@ -1,0 +1,35 @@
+<div class="container pt-5">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-10">
+    <div class="card border-warning mb-3" style="max-width: 55rem;">
+        <div class="card-header bg-info text-center text-white">Write a blog</div>
+        <div class="card-body ">
+            <form [formGroup]="blogForm" (ngSubmit)="saveBlog()">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="title" placeholder=""
+                        formControlName="title">
+                </div>
+                <div class="form-group">
+                    <label for="content">Content</label>
+                    <textarea type="text" class="form-control" id="content" placeholder=""
+                        formControlName="content"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="file">Title</label>
+                    <input type="file" class="form-control" id="fil" 
+                         (change)="onFileSelect($event)">
+                </div>
+                
+                <div class="text-right">
+                  <button type="submit" class="btn btn-info border-white btn-group-sm">Create Blog</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>
+<div class="col"></div>
+</div>
+</div>

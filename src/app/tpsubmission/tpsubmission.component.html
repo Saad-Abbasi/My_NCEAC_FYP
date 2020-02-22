@@ -1,0 +1,107 @@
+<div class="container-flud bg ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-2">
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="btn btn-secondary bg-dark text-white fa "  (click)="goback()"> Back To Profile</a>
+                     </li>
+                  
+                     </ul>
+                </div>
+                <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link fa fa-sign-out" routerLink="/login">logout</a>
+                        </li>
+                     </ul>
+              </nav>
+    <div class="container pt-3 pb-5">
+        <div class="row">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header  ">Daily Evaluation form</div>
+                    <div class="card-body">
+                        <form [formGroup]="pSubForm" (ngSubmit)=" createTopic()">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="date">Date</label>
+                                    <input type="date" class="form-control" id="date" placeholder="Date"
+                                        formControlName="date">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="day">Day</label>
+                                    <select class="form-control" formControlName="day" id="day" >
+                                        <option value="" selected disabled hidden>--Select Day Here--</option>
+                                        <option>2</option>
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="week">Week</label>
+                                    <select class="form-control" formControlName="week">
+                                        <option value="" selected disabled hidden>--Select Week Here--</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                        <option>13</option>
+                                        <option>14</option>
+                                        <option>15</option>
+                                        <option>16</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="day">Duration</label>
+                                    <input type="text" class="form-control" id="duration" formControlName="duration"
+                                        formControlName="duration">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="instrumentUsed">Instruments</label>
+                                    <select class="form-control" formControlName="instrumentUsed">
+                                        <option value="" selected disabled hidden>--Select instrument Here--</option>
+                                         <option>Projector</option>
+                                        <option>Led</option>
+                                        <option>Audino</option>
+                                        <option selected>Oral</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <!-- <label for="file">Duration</label>
+                                    <input type="file" class="form-control" id="file" formControlName="file"
+                                        formControlName="file"> -->
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="topicCovered">Topic Covered</label>
+                                <textarea type="text" class="form-control" id="topicCovered"  placeholder=""
+                                    formControlName="topicCovered"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn  ">Submit Performa</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                
+            </div>
+
+        </div>
+    </div>
+</div>

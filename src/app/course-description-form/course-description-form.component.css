@@ -1,0 +1,45 @@
+th{
+    width:10%;
+    
+}
+td {
+    width:90%;
+  }
+  .tbl{
+      width:16%;
+      
+  }
+  table,thead,th,td,tbody{
+      border:1px solid black;
+      border-collapse: collapse;
+  }
+  .nesttbl{
+      margin-top: 0px;
+  }
+  .tbll{
+      width: 50%;
+  }
+  .tbl10{
+      width: 10%;
+      text-align: center;
+
+  }
+  .tbl80{
+      width:80%;
+      
+  }
+  .container-flud{
+      font-size: 20px;
+  }
+  .center {
+    padding: 19px 0;
+    text-align: center;
+  }
+  .tblborder{
+      border: none;
+  }
+  hr{
+    height:1px;
+    color: #000;
+    background-color: #000;
+}

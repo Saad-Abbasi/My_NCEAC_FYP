@@ -1,0 +1,40 @@
+.pad,.container{
+    padding-top: 10px;
+}
+.panel-title{
+    text-align: center;
+}
+.link{
+    text-align: right;
+}
+i{
+    background-color: aqua;
+}
+
+.avtar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+    
+}
+img{
+    height: 0%;
+    width: 100%;
+}
+.bgstyle{
+    background-repeat: no-repeat;
+    background-image: url(/assets/images/fluid.jpg);
+    background-size: 100%;
+    height:600px;
+}
+.cntnr{
+    background-repeat: no-repeat;
+    background-image: url(/assets/images/cntnr2.png);
+    background-size: 100%;
+    height: 100%;
+
+}

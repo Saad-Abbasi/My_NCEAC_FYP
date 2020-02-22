@@ -1,0 +1,15 @@
+.bg{
+    height: 600px;
+    width: 1349px;
+    background-size: cover;
+    background: url(/assets/images/bgsession.png);
+}
+.card{
+    background-color: transparent;
+    color: black;
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+input{
+    background-color: rgba(216, 196, 183, 0.534);
+}

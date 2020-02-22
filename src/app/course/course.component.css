@@ -1,0 +1,46 @@
+.bg{
+    height: 600px;
+    width: 1349px;
+    background-size: cover;
+    background: url(/assets/images/bgcourses.png);
+}
+.card-header{
+    background-color: rgba(170, 63, 63, 0.479);
+    padding: 3px;
+    height: 35px;
+   
+    
+}
+/* .container-fluid{
+    background-color: rgb(9, 218, 255);
+} */
+.form-control{
+    padding-top: 4px;
+}
+.form{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.card{
+    background-color: transparent;
+   
+}
+label{
+    color:white;
+    font-family: sans-serif;
+    
+    
+    font-size: 18px;
+    background-blend-mode: multiply;
+}
+.orignal{
+    background: transparent;
+    color: white;
+    opacity: 4;
+    
+}
+input{
+    background-color: rgba(85, 74, 59, 0.767);
+    border: 3px solid;
+    border-color: rgba(0, 255, 55, 0.418);
+}

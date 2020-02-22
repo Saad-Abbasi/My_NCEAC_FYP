@@ -1,0 +1,85 @@
+
+<div class="container-flud">
+    
+    <div class="container pt-5">
+        <table class="tblborder">
+      <thead class="tblborder">  <hr >
+        <div class="row">
+            <div class="col-2">
+                <img src="assets/images/nceac.png" width="100px" height="80px">
+            </div>
+            <div class="col-8">
+                <div class="text-center">
+                    <h3> National Computing Education Accreditation Council</h3>
+                    <h5>NCEAC</h5>
+                </div>
+           </div>
+           <div class="col-2 pl-5">
+            <img src="assets/images/hec.png" width="50px" height="50px">
+        </div>
+         </div>
+        <hr>
+         <h6 class="text-right pt-0">NCEAC.FORM.001-D</h6>
+       </thead>
+    <tbody class="tblborder">
+      
+        <h1 class="text-center">Course Description Form</h1>
+    <div class="row pt-5">
+        <div class="col-4 ">
+            <h3>INSTITUTION</h3>
+            <h3 class="pt-1">PROGRAM(S) TO BE EVALUATED</h3>
+        </div>
+        <div class="col-6">
+                <h5>University Of Azad Jammu and Kashmir</h5><hr>
+                <h5 class="pt-1">Bachelors of Sciences in Computer Sciences(BSCS),4 Years</h5><hr>
+                
+            </div>
+    </div>
+    <div class="pt-5">
+            <h2>A. Course Description Form </h2>
+            <p>(Fill out the following table for each course in your computer science curriculum. A filled out form should not be more than 2-3 pages)</p>
+    </div>
+    <div >
+        <table >
+            
+                        <tr><th>Course Code</th><td>{{course?.c_code}}</td></tr>
+                        <tr><th>Course Title</th><td>{{course?.c_title}}</td></tr>
+                        <tr><th>Credit Hours</th><td>{{course?.c_hours}}</td></tr>
+                        <tr><th>Prerequisites by Course(s)<br> and Topics</th><td>{{course?.c_pre}}</td></tr>
+                        <tr><th><b>Assesment Instruments with Weights</b>(homeWork,<br>quizzes,midterms,final,<br>programming assignments<br>,lab work,etc)</th>
+                        <td>
+                            <table style="width:100%;" class="text-center">
+                                <tr><th class="tbl">Assignments</th><th class="tbl">Quizes</th  ><th class="tbl">Midterms</th><th class="tbl">final</th><th class="tbl">lab Work</th><th class="tbl">Total Marks</th></tr>
+                                <tr><td class="tbl">{{course?.m_assign}}</td><td class="tbl">{{course?.m_quiz}}</td><td class="tbl">{{course?.m_mid}}</td><td class="tbl">{{course?.m_final}}</td><td class="tbl">{{course?.m_lab}}</td>
+                                    <td>{{course?.m_lab+course?.m_assign+course?.m_quiz+course?.m_mid}}</td>
+                                </tr>
+                            </table>
+
+                        </td>
+                        </tr>
+                        <tr><th>Course Coordinator</th><td>{{course?.c_coordinator}}</td></tr>
+                        <tr><th>Url (if any)</th><td>{{course?.c_url}}</td></tr>
+                        <tr><th>Current Catelog Description</th><td>{{course?.c_catelog}}</td></tr>
+                        <tr><th>Textbook (or <b>Laboratory Manual</b></th><td>{{course?.c_tbook}}</td></tr>
+                        <tr><th>Reference Material</th><td>{{course?.c_reference}}</td></tr>
+                        <tr><th>Course Goals</th><td>{{course?.c_goals}}</td></tr>
+                        <tr>
+                            <th>Topic Covered in the Course, with Number of Lectures on Each Topic<h5>(assume 15-week instruction and one-hour lectures)</h5></th>
+                            <td>
+                              <table style="width:100%" class="nesttbl"  >
+                                  <tr><th class="tbl10">Week</th><th class="tbl80">Topic Covered</th></tr> 
+                                <tr *ngFor="let i = index;let topic of course?.topic_covered">
+                                <td class="tbl10">{{topic?.week}}:</td>
+                                    <td class="tbl80">{{topic?.t_cover}}</td></tr>
+                                
+                                </table> 
+                            
+                            </td>
+                        </tr>
+             </table>
+    </div>
+</tbody>
+</table>
+</div>
+
+</div>

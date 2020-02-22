@@ -1,0 +1,220 @@
+<div class="container-flud bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light  mt-2">
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="btn btn-secondary text-white fa fa-angle-double-left"  (click)="goback()"> Go Back</a>
+                     </li>
+                  
+                     </ul>
+                </div>
+                <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link fa fa-sign-out" routerLink="/login">logout</a>
+                        </li>
+                     </ul>
+              </nav>
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-8">
+                <div class="card">
+                    <div class="card-header text-center bg-info text-light">Course Desciption Form</div>
+                    <div class="card-body">
+                        <form [formGroup]="dForm" (ngSubmit)="createSubmitPerform()">
+
+                            <div class="form-group row">
+                                <label for="dprogram" class="col-sm-2 col-form-label">Degree Program</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" formControlName="degreeProgram">
+                                        <option>--Select program Here--</option>
+                                        <option>BSCS</option>
+                                        <option>MCS</option>
+                                        <option>MPHIL</option>
+                                        <option>PHD</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="dprogram" class="col-sm-2 col-form-label">Session</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control"formControlName="session">
+                                        <option>--Select Session Here--</option>
+                                        <option>2017-19</option>
+                                        <option>2017-21</option>
+                                        <option>2018-20</option>
+                                        <option>2018-22</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="dprogram" class="col-sm-2 col-form-label">Semester</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control"formControlName="semester">
+                                        <option>--Select Semester Here--</option>
+                                        <option>1st</option>
+                                        <option>2nd</option>
+                                        <option>3rd</option>
+                                        <option>4th</option>
+                                        <option>5th</option>
+                                        <option>6th</option>
+                                        <option>7th</option>
+                                        <option>8th</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <h5>A Course Description</h5>
+                                <p>(fill out the following table for each course in your computer science curriculm. A fill out form should not be more than 2-3 pages</p>
+                            </div>
+                            <div class="form-group row">
+                                    <label for="dprogram" class="col-sm-2 col-form-label">Course Title</label>
+                                    <div class="col-sm-10">
+                                        <select class="form-control" id="course"formControlName="courseTitle" (change)="fillValues($event)" >
+                                            <option value="" disabled selected>--Select Course Here--</option>
+                                            <option value="Object_Oriented_Programming">Object Oriented Programming</option>
+                                            <option value="Introduction_To_Data_Base">Introduction To Database</option>
+                                            <option value="Data_Structure_Algorithm">Data Structure & Algorithm</option>
+                                            <option value="Compiler_Construction"> Compiler Construction</option>
+                                            <option value="Operating_System">Operating System</option>
+                                            <option value="Data_Communication">Data Communication</option>
+                                            <option>7th</option>
+                                            <option>8th</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                        <label for="dprogram" class="col-sm-2 col-form-label" >Cours Code</label>
+                                        <div class="col-sm-10">
+                                           <input type="text" class="form-control  " id="courseCode" formControlName="courseCode">
+                                        </div>
+                                </div>
+                                <div class="form-group row">
+                                        <label for="dprogram" class="col-sm-2 col-form-label">Credit Hours</label>
+                                        <div class="col-sm-10">
+                                           <input type="text" class="form-control" id="creditHours" formControlName="creditHours">
+                                        </div>
+                                </div>
+                                <div class="form-group row">
+                                        <label for="pre" class="col-sm-2 col-form-label">Prerequisities </label>
+                                        <div class="col-sm-10">
+                                           <input type="text" class="form-control" id="pre" formControlName="pre">
+                                        </div>
+                                </div>
+                            <div>
+                                <h5>Assessment instruments With weight</h5>
+                                <p>(homework,quizzes,midterm,final,programming,assignments,lab work, etc</p>
+                            </div>
+                            <div class="form-group row">
+                                    <label for="quiz" class="col-sm-2 col-form-label">Quiz Marks</label>
+                                    <div class="col-sm-10">
+                                       <input type="text" class="form-control " placeholder="Enter Quiz Marks Here..." formControlName="quiz">
+                                    </div>
+                            </div>
+                            <div class="form-group row">
+                                    <label for="assignments" class="col-sm-2 col-form-label">Assignment Marks</label>
+                                    <div class="col-sm-10">
+                                       <input type="text" class="form-control" placeholder="Enter Assingment Marks Here..." formControlName="assignment">
+                                    </div>
+                            </div>
+                            <div class="form-group row">
+                                    <label for="lab" class="col-sm-2 col-form-label">Lab Marks</label>
+                                    <div class="col-sm-10">
+                                       <input type="text" class="form-control " placeholder="Enter Lab Marks Here..." formControlName="lab">
+                                    </div>
+                            </div>
+                            <div class="form-group row">
+                                    <label for="mid" class="col-sm-2 col-form-label">Midterm Marks</label>
+                                    <div class="col-sm-10">
+                                       <input type="text" class="form-control" placeholder=" Enter Mid Marks Here..." formControlName="midTerm">
+                                    </div>
+                            </div>
+                            <div class="form-group row">
+                                    <label for="final" class="col-sm-2 col-form-label">Finalterm Marks</label>
+                                    <div class="col-sm-10">
+                                       <input type="text" class="form-control " placeholder="Enter Final Marks Here..."formControlName="finalTerm">
+                                    </div>
+                            </div>
+                            <div class="form-group row">
+                                    <label for="assignments" class="col-sm-2 col-form-label">Total Marks</label>
+                                    <div class="col-sm-10">
+                                       <input type="text" class="form-control" placeholder="Total Marks..." formControlName="totalMarks">
+                                    </div>
+                            </div>
+                            <div class="form-group row">
+                                    <label for="courseCoordinator" class="col-sm-2 col-form-label">Course Coordinator</label>
+                                    <div class="col-sm-10">
+                                       <input type="text" class="form-control " placeholder="..."formControlName="courseCoordinator">
+                                    </div>
+                            </div>
+                            <div class="form-group row">
+                                    <label for="url" class="col-sm-2 col-form-label">URL (if any)</label>
+                                    <div class="col-sm-10">
+                                       <input type="text" class="form-control" placeholder="www.example.com/dld/chap3.js" formControlName="url">
+                                    </div>
+                            </div>
+                            
+                            <div class="form-group row">
+                                    <label for="catlog" class="col-sm-2 col-form-label">Current Catelog Description</label>
+                                    <div class="col-sm-10">
+                                       <input type="text" class="form-control " placeholder="..." formControlName="currentCatelogDescription">
+                                    </div>
+                            </div>
+                            <div class="form-group row">
+                                    <label for="lManual" class="col-sm-2 col-form-label"><h6>Textbook</h6>(or <h6>laboratory Manual</h6> for laboratory Courses)</label>
+                                    <div class="col-sm-10">
+                                       <input type="text" class="form-control" placeholder=" ..."formControlName="textBook">
+                                    </div>
+                            </div>
+                            <div class="form-group row">
+                                    <label for="rMaterial" class="col-sm-2 col-form-label">Reference Material</label>
+                                    <div class="col-sm-10">
+                                       <input type="text" class="form-control " placeholder="..."formControlName="referenceMaterial">
+                                    </div>
+                            </div>
+                            <div class="form-group row">
+                                    <label for="cGoals" class="col-sm-2 col-form-label">Course Goals</label>
+                                    <div class="col-sm-10">
+                                       <textarea type="text" class="form-control" placeholder="Course Goals Here..." formControlName="courseGoals"></textarea>
+                                    </div>
+                            </div>
+                           <!-- <div class="form-group row">
+                            <div class="col-sm-2">
+                                <div class="pt-3 ">
+                                   <p> <b>Topic covered in the Course,with Number of Lectures on Each Topic</b>(assume 15-week instruction and one-hour lectures)</p>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-10">
+                                <table class="table table-bordered responsive">
+                                   <tr> <th>Week</th><th>Topic covered</th></tr>
+                                   <tr> <td>1</td><td>Digital Login and Design of digital systems</td></tr>
+                                   <tr><td>2</td><td>Number System</td></tr>
+                                   <tr><td>3</td><td>Truth Tables</td></tr>
+                                   <tr> <td>4</td><td>Basic gates and algebraic expressions</td></tr>
+                                </table>
+                            </div> 
+                        </div>
+                        -->
+
+                        
+                            <div class="text-right">
+                                <button  type="submit" class="btn btn-primary bg-warning text-light">Save Performa</button>
+                            </div>
+                        
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col"></div>
+
+        </div>
+    </div>
+</div>

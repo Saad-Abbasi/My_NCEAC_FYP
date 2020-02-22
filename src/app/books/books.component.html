@@ -1,0 +1,88 @@
+<div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <!-- <a class="navbar-brand" href="#">Admin Pannel</a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" routerLink="/admin">Home</a>
+                     </li>
+                    <!-- <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Teacher
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" routerLink="/addteacher">Add Teacher</a>
+                        <a class="dropdown-item" routerLink="/teacher">view Teachers</a>
+                         <a class="dropdown-item" href="#">Something else here</a> 
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Course
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" routerLink="/course">Add Course</a>
+                          <a class="dropdown-item" routerLink="/managecourse">view Courses</a>
+                         
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Book
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" routerLink="/addbook">Add Book</a>
+                          <a class="dropdown-item" routerLink="/books">view Books</a>
+                        </div>
+                      </li> -->
+                      <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Session
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" routerLink="/addsession">Add Session</a>
+                            <a class="dropdown-item" routerLink="/viewsession">View Sessions</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a> 
+                        </div>
+                      </li> -->
+                     </ul>
+                </div>
+                <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link fa fa-sign-out" routerLink="/login">logout</a>
+                        </li>
+                     </ul>
+              </nav>
+              
+              <!-- Nav Ends -->
+
+    <div class="container pt-5 ">
+        <h2 class="text-center ">Recomended Books Detail</h2>
+        <table class="table table-dark pt-2">
+            <thead>
+                <tr>
+                    <th scope="col">Book Name</th>
+                    <th scope=" col">Author Name</th>
+                    <th scope="col">Class</th>
+                    <th scope="col">Semmester</th>
+                    <th scope="col">Session</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let book of books">
+                     <td>{{book?.b_name}}</td>
+                    <td>{{book?.b_author}}</td>
+                    <td>{{book?.b_id}}</td><!--Class-->
+                    <td>{{book?.b_rec}}</td> <!--semester-->
+                    <td>{{book?.b_sec}}</td><!--session-->
+                     </tr>
+               </tbody>
+        </table>
+
+
+    </div>
+</div>

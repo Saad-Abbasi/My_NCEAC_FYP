@@ -1,0 +1,117 @@
+<div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <!-- <a class="navbar-brand" href="#">Admin Pannel</a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                     </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Teacher
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" routerLink="/addteacher">Add Teacher</a>
+                        <a class="dropdown-item" routerLink="/teacher">view Teachers</a>
+                        <!-- <a class="dropdown-item" href="#">Something else here</a> --> 
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Course
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" routerLink="/course">Add Course</a>
+                          <a class="dropdown-item" routerLink="/managecourse">view Courses</a>
+                         
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Book
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" routerLink="/addbook">Add Book</a>
+                            <a class="dropdown-item" routerLink="/books">view Books</a>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Session
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" routerLink="/addsession">Add Session</a>
+                                <a class="dropdown-item" routerLink="/viewsession">View Sessions</a>
+                          <!-- <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a> -->
+                        </div>
+                      </li>
+                     </ul>
+                </div>
+                <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link fa fa-sign-out" routerLink="/login">logout</a>
+                        </li>
+                     </ul>
+              </nav>
+              
+              <!-- Nav Ends -->
+
+    <div class="container pt-5 ">
+
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Course ID</th>
+                    <th scope="col">Course Title</th>
+                    <th scope="col">Recommended Book</th>
+                    <th scope="col">Credit Hours</th>
+                    <th scope="col">Course Goals</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+
+                    <td><i class="fa fa-user fa-2x"></i></td>
+                    <td>CS-1012</td>
+                    <td>Oop C++</td>
+                    <td>Robbert Lofar</td>
+                    <td>02.00</td>
+                    <td>introduction to programming</td>
+                    <td><i class="fa fa-edit"></i></td>
+                    <td><i class="fa fa-remove" (click)="delete()"></i></td>
+
+                </tr>
+                <tr>
+
+                        <td><i class="fa fa-user fa-2x"></i></td>
+                        <td>CS-1012</td>
+                        <td>Oop C++</td>
+                        <td>Robbert Lofar</td>
+                        <td>02.00</td>
+                        <td>introduction to programming</td>
+                        <td><i class="fa fa-edit"></i></td>
+                        <td><i class="fa fa-remove" (click)="delete()"></i></td>
+    
+                    </tr>
+                    <tr>
+
+                            <td><i class="fa fa-user fa-2x"></i></td>
+                            <td>CS-1012</td>
+                            <td>Oop C++</td>
+                            <td>Robbert Lofar</td>
+                            <td>02.00</td>
+                            <td>introduction to programming</td>
+                            <td><i class="fa fa-edit"></i></td>
+                            <td><i class="fa fa-remove" (click)="delete()"></i></td>
+        
+                        </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+</div>

@@ -1,0 +1,144 @@
+
+<div class="container-fluid bgstyle" >
+  <div class="container pt-2 pb-2 ">
+    <div class="row">
+      
+      <div class="align-center col-7  ">
+           <form [formGroup]="registerForm" (ngSubmit)="register()" class="pt-2 pb-2 ">
+             <div class="form-group ">
+                <img class="avtar" src="assets/images/login.png">
+             </div>
+             <div class="form-group ">
+              <p class="input-group">
+                 <i class="fa fa-user fa-2x  user-icon fa-fw" aria-hidden="true"></i>
+                <input type="text" class="form-control " id="exampleInputEmail1" aria-describedby="FirstName" placeholder="First Name" formControlName="firstname">
+               </p> 
+             </div>
+             <div class="form-group ">
+              <p class="input-group">
+                 <i class="fa fa-user fa-2x user-icon fa-fw" aria-hidden="true"></i>
+                <input type="text" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" Last Name" formControlName="lastname">
+               </p> 
+             </div>
+                <div class="form-group ">
+                 <p class="input-group">
+                    <i class="fa fa-user fa-2x  fa-fw" aria-hidden="true"></i>
+                   <input type="text" class="form-control " id="username" aria-describedby="username" placeholder="Username" formControlName="username">
+                  </p> 
+                </div>
+                <div class="form-group ">
+                  <p class="input-group">
+                     <i class="fa fa-envelope fa-2x  fa-fw" aria-hidden="true"></i>
+                    <input type="text" class="form-control " id="email" aria-describedby="email" placeholder="Email" formControlName="email">
+                   </p> 
+                 </div>
+                <div class="form-group">
+                  <p class="input-group">
+                    <i class="fa fa-unlock fa-2x fa-fw"></i>
+                  <input type="password" class="form-control" id="password" placeholder="Password" formControlName="password">
+                </p>
+                </div>
+                <p class="input-group text-white ">
+                <button type="submit" class="btn btn-primary mr-2">Signup  </button>   or ? <a routerLink="/login" class="ml-2" > login</a>
+              </p>
+              </form>
+        </div>
+     </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div clas="container-flud ">
+<div class="container ">
+    <form [formGroup]="registerForm" class="form-horizontal " (ngSubmit)="register()">
+    <div class="panel panel-primary ">
+      <div class="panel-heading">
+        <h3 class="panel-title">Registration Form</h3>
+      </div>
+      <div class="pane-body">
+      <div class="form-group pad">
+          <label class="col-sm-2 control-label" for="firstname">First Name:</label>
+            <div class="col-md-8">
+              <input type="text" id="firstname" formControlName="firstname" class="form-control" ng-model="mymdl">
+           </div>
+      </div>
+      <div class="form-group ">
+            <label class="col-sm-2 control-label" for="lastname">Last Name:</label>
+              <div class="col-md-8">
+                <input type="text" id="lastname" formControlName="lastname" class="form-control" ng-model="mymdl">
+             </div>
+        </div>  
+        <div class="form-group ">
+          <label class="col-sm-2 control-label" for="username">User Name:</label>
+          <div class="col-md-8">
+            <input type="text" id="username" formControlName="username" class="form-control" ng-model="mymdl">
+          </div>
+        </div>
+        <div class="form-group ">
+                <label class="col-sm-2 control-label" for="email">Your Email:</label>
+                  <div class="col-md-8">
+                    <input type="email" id="email" formControlName="email" class="form-control" ng-model="mymdl">
+                 </div>
+            </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label" for="password">Password:</label>
+            <div class="col-md-8">
+              <input type="password" id="password" formControlName="password" class="form-control">
+            </div>
+          </div>
+        <div class="panel-footer">
+         <button type="submit" class="btn btn-primary"> Signup </button>  <b> Have an accout? : </b> <a routerLink="/login" ><u>  login</u></a>
+        </div>
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
+   <div *ngFor="let in of information">
+      <h2>{{in.name}}</h2>
+    
+        <p>
+          {{in.address}}
+        </p>
+        
+    </div> -->
+  

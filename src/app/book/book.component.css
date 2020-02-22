@@ -1,0 +1,20 @@
+.bg{
+    height: 690px;
+    width: 1349px;
+    background-size: cover;
+    background: url(/assets/images/bgbook.png);
+}
+.card{
+    background-color:rgba(255, 255, 255, 0.63);
+    
+    border: 2px solid;
+}
+.card-header{
+    background-color: rgba(222, 184, 135, 0.534);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+label{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

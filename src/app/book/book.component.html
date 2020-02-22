@@ -1,0 +1,106 @@
+
+<div class="container-flud bg">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <!-- <a class="navbar-brand" href="#">Admin Pannel</a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" routerLink="/admin">Home</a>
+                     </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Teacher
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" routerLink="/addteacher">Add Teacher</a>
+                        <a class="dropdown-item" routerLink="/teacher">view Teachers</a>
+                        <!-- <a class="dropdown-item" href="#">Something else here</a> --> 
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Course
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" routerLink="/course">Add Course</a>
+                          <a class="dropdown-item" routerLink="/managecourse">view Courses</a>
+                         
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Book
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" routerLink="/addbook">Add Book</a>
+                                <a class="dropdown-item" routerLink="/books">view Books</a>
+                        </div>
+                      </li>
+                      <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Session
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" routerLink="/addsession">Add Session</a>
+                            <a class="dropdown-item" routerLink="/viewsession">View Sessions</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </li> -->
+                     </ul>
+                </div>
+                <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link fa fa-sign-out" routerLink="/login">logout</a>
+                        </li>
+                     </ul>
+              </nav>
+    <div class="container pt-2">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-7">
+        <div class="card border-success  mb-0 pb-0" style="max-width: 28rem;">
+            <div class="card-header text-center">Recommended  Book Form</div>
+            <div class="card-body text-success">
+                <form [formGroup]="bookForm" (ngSubmit)="saveBook()">
+                    
+                    <div class="form-group">
+                        <label for="b_name">Book Name</label>
+                        <input type="text" class="form-control " id="b_name" placeholder="Book Name"
+                            formControlName="b_name">
+                    </div>
+                    <div class="form-group">
+                            <label for="b_author">Author Name</label>
+                            <input type="text" class="form-control" id="b_author" placeholder="Book Author"
+                                formControlName="b_author">
+                    </div>
+                    <div class="form-group">
+                      <label for="b_id">Class</label><!--Class of students-->
+                      <input type="text" class="form-control" id="b_id" placeholder="Class"
+                          formControlName="b_id">
+                  </div>
+                    <div class="form-group">
+                      <label for="b_rec">Semester</label><!--Semester-->
+                      <input type="text" class="form-control" id="b_rec" placeholder="Choose Semester"
+                          formControlName="b_rec">
+                  </div>
+                  <div class="form-group">
+                    <label for="b_sec">Session </label>
+                    <input type="text" class="form-control" id="b_sec" placeholder="Choose Session"
+                        formControlName="b_sec">
+                        <div class="text-right pt-3">
+                          <button type="submit" class="btn btn-warning btn-small">Save Book</button>
+                        </div>
+                </div>
+                    
+                 </form>
+            </div>
+        </div>
+    </div>
+    <div class="col"></div>
+    </div>
+    </div>
+</div>

@@ -1,0 +1,139 @@
+<div class="container-flud">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <!-- <a class="navbar-brand" href="#">Admin Pannel</a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" routerLink="/admin">Home</a>
+                     </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Teacher
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" routerLink="/addteacher">Add Teacher</a>
+                        <a class="dropdown-item" routerLink="/teacher">view Teachers</a>
+                        <!-- <a class="dropdown-item" href="#">Something else here</a> --> 
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Course
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" routerLink="/course">Add Course</a>
+                          <a class="dropdown-item" routerLink="/managecourse">view Courses</a>
+                         
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Book
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" routerLink="/addbook">Add Book</a>
+                            <a class="dropdown-item" routerLink="/books">view Books</a>
+                        </div>
+                      </li>
+                      <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Session
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" routerLink="/addsession">Add Session</a>
+                            <a class="dropdown-item" routerLink="/viewsession">View Sessions</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </li> -->
+                     </ul>
+                </div>
+                <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link fa fa-sign-out" routerLink="/login">logout</a>
+                        </li>
+                     </ul>
+              </nav>
+
+
+              <div class="container " >
+    
+                    <h1><b>Course Description Form</b></h1>
+                    <div class="row">
+                        <div class="col-md-4"><b><h2>INSTITUTION</h2></b></div>
+                        <div class="col-md-8"><u><h3>Uinversity Of Azad Jammu and Kashmir</h3></u></div>
+                    </div>
+                    <div class="row">
+                            <div class="col-md-4"><b><h2>Program To Be Evaluated</h2></b></div>
+                            <div class="col-md-8"><u><h3>Bachelors of Sciences in Computer Sciences (BSCS). 4 Years</h3></u></div>
+                        </div>
+                        <div class="row">
+                                <div class="col-md-4"><b><h2>A. Course Description</h2></b></div>
+                                <div class="col-md-8"><h6>(Fill Out the following table for each course in your computer science curriculum. A filled out form should not be more than 2-3 pages)</h6></div>
+                        </div>
+                    
+                    
+                    <table  class=" table table-responsive "  border="solid 5px">
+                            <tr>
+                                <th>Course Code</th><td>CS-2103</td>
+                            </tr>
+                            <tr>
+                                <th>Course Title</th><td>Digital Logic Design </td>
+                            </tr>
+                            <tr>
+                                <th>Credit Hours</th><td>2+1</td>
+                            </tr>
+                            <tr>
+                                <th>Prerequisties by Courses Topics</th><td>--</td>
+                            </tr>
+                            <tr>
+                                <th>Assesment Instruments With Weight <br>(homework,quizzes,midterms,<br>final,programming,assignments,lab work,etc</th><td>
+                                    Quiz=10<br>
+                                    Assinment=10<br>
+                                    Lab = 50 <br>
+                                    Mid = 30<br>
+                                    Final = 50<br>
+                                    Total = 150
+                            
+                            </td>
+                            </tr>
+                            <tr>
+                                <th>Course Cordinator</th><td>Dr Ali Abbas</td>
+                            </tr>
+                            <tr>
+                                <th>Url (if any)</th><td>--</td>
+                            </tr>
+                            <tr>
+                                    <th>Current Catalog Description</th><td></td>
+                            </tr>
+                            <tr>
+                                    <th>Textbook(or (labortary Manual for Laboratory Courses)</th><td>CS-2103</td>
+                            </tr>
+                            <tr>
+                                    <th>Reference material</th><td></td>
+                            </tr>
+                            <tr>
+                                    <th>Course Goal</th><td>This Course introduces the concept of digital logic, gates and the digital circuits. further, it focuses on the design and analysis combinational and sequential circuits</td>
+                            </tr>
+                            <tr>
+                                    <th>Topics Covered in the Course, with Number of Lectures on Each Topic<h6>(assume 15 week insturction and one-hour lectures)</h6></th><td>
+                                        <table border="1px solid">
+                                                <tr><th>Week</th><th>Topic Covered</th></tr>
+                                                <tr><td>1</td><td>Digital logic and components of digital systems</td></tr>
+                                                <tr><td>2</td><td>Number Systems</td></tr>
+                                                <tr><td>3</td><td>Truth tables</td></tr>
+                                                <tr><td>4</td><td>Basic gates and algebraic expressions</td></tr>
+                    
+                                        </table>
+                                </td>
+                            </tr>
+                        </table>
+                    
+                    </div>
+
+</div>
+
+

@@ -1,0 +1,98 @@
+<div class="container-flud">
+
+
+<div class="container pt-5">
+    <!-- Heder Section  -->
+    <table style="width: 100%;">
+        <thead>
+            <hr class="hrr">
+            <div class="row">
+                <div class="col-2">
+                    <img src="assets/images/nceac.png" width="100px" height="80px">
+                </div>
+                <div class="col-8">
+                    <div class="text-center">
+                        <h3> National Computing Education Accreditation Council</h3>
+                        <h5>NCEAC</h5>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <img src="assets/images/hec.png" width="100px" height="80px">
+                </div>
+            </div>
+            <hr class="hrr">
+        </thead>
+        <tbody >
+            <h1 class="text-center">Course Description Form</h1>
+            <div class="row pt-5">
+                <div class="col-4 ">
+                    <h4>INSTITUTION</h4>
+                    <h4 class="pt-3">PROGRAM(S) TO BE EVALUATED</h4>
+                    <h4 class="pt-3">Course Name</h4>
+                    <h4 class="pt-3">Catalog Number</h4>
+                    <h4 class="pt-3">Instructor Name</h4>
+                </div>
+                <div class="col-6">
+                    <div>
+                        <h5>University Of Azad Jammu and Kashmir</h5>
+                        <hr>
+                        <h5 class="">Bachelors of Sciences in Computer Sciences(BSCS),4 Years</h5>
+                        <hr>
+                        <h5 class="">{{topics?.c_title}}</h5>
+                        <hr>
+                        <h5 class="">{{topics?.c_catelog}}</h5>
+                        <hr>
+                        <h5 class="">{{topics?.c_coordinator}}</h5>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="pb-5">
+                <p id="break">
+
+                </p>
+                <table  class=" table-bordered table-custom">
+                    <tr >
+                        <th class="text-center-custom">Date</th>
+                        <th class="text-center-custom">Duration</th>
+                        <th class="text-center-custom">Topic Covered</th>
+                        <th class="text-center-custom">Evaluation Instr Used</th>
+                        <th class="text-center-custom">Signature</th>
+                    </tr>
+                    <tr *ngFor="let topic of topics?.topic_covered" class="text-center">
+                        <td>{{topic?.date|date}}</td>
+                        <td class="text-left">{{topic?.dur}}: hours</td>
+                        <td class="text-left">{{topic?.t_cover}}</td>
+                        <td>{{topic?.instr}}</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <b><p>Instructor Signature: ___________________</p></b>
+                </div>
+                <div class="col"></div>
+                    
+                <div class="col-3">
+                    <b><p>Date: ________________________</p></b>
+                </div>
+            </div>
+            <hr>
+        </tbody>
+    </table>
+</div>
+</div>
+<!-- <button
+[useExistingCss]="true" printSectionId="print-section" ngxPrint>print</button> -->
+<!-- Table Change -->
+<!-- <div class="row"*ngFor="let topic of topics?.topic_covered">
+    <div class="col-3">
+       
+    </div>
+    <td class="col-3">{{topic?.week}}</td>
+    <td class="col-3">{{topic?.t_cover}}</td>
+    <td class="col-2">{{topic?.instr}}</td>
+    <td class="col-2">{{topic?.date}}</td>
+    <td class="col-2">{{topic?.dur}}</td>
+</div> -->

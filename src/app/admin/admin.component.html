@@ -1,0 +1,120 @@
+<div class="container-fluid bg">
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- <a class="navbar-brand" href="#">Admin Pannel</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/admin">Home</a>
+         </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Teacher
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" routerLink="/addteacher">Add Teacher</a>
+            <a class="dropdown-item" routerLink="/teacher">view Teachers</a>
+            <!-- <a class="dropdown-item" href="#">Something else here</a> --> 
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Course
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" routerLink="/course">Add Course</a>
+              <a class="dropdown-item" routerLink="/managecourse">view Courses</a>
+             
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Book
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" routerLink="/addbook">Add Book</a>
+                <a class="dropdown-item" routerLink="/books">view Books</a>
+            </div>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Session
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" routerLink="/addsession">Add Session</a>
+              <a class="dropdown-item" routerLink="/viewsession">View Sessions</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li> -->
+         </ul>
+    </div>
+    <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link fa fa-sign-out" routerLink="/login">logout</a>
+            </li>
+         </ul>
+  </nav>
+<!------------------------------------------------------------------------------------>
+                                    <!--Show Case -->
+<!------------------------------------------------------------------------------------>
+<div class="container mt-5 pb-2 ">
+        <div class="row mt-5 mb-5 ml-5 mr-5">
+            <div class="col-4 mr">
+                <div class="card " style="width: 13rem;">
+                        <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                        <div class="card-header  text-center text-light">Teacher</div>
+                        <div class="card-body ">
+                            <img src="assets/images/teacher.png" class="imgtt">
+                        <!-- <h5 class="card-title">Card title</h5> -->
+                        <p class="card-text">.</p>
+                        <a routerLink="/teacher" class="btn btn-success">Manage Teacher</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mr">
+                <div class="card " style="width: 13rem;">
+                        <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                        <div class="card-header  text-center text-light">Course</div>
+                        <div class="card-body   ">
+                                <img src="assets/images/course.png" class="imgt">
+                        <!-- <h5 class="card-title">Card title</h5> -->
+                        <p class="card-text"></p>
+                        <a routerLink="/managecourse" class="btn btn-success">Manage Courses</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mr">
+                <div class="card " style="width: 13rem;">
+                        <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                        <div class="card-header  text-center text-light">Book</div>
+                        <div class="card-body   ">
+                            <img src="assets/images/book.png" class="imgt">
+                        <!-- <h5 class="card-title">Card title</h5> -->
+                        <p class="card-text"></p>
+                        <a routerLink="/books" class="btn btn-success">Manage Books</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-3 mr">
+                <div class="card " style="width: 13rem;">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-header  text-center text-light">Session</div>
+                        <div class="card-body   ">
+                            <img src="assets/images/session2.png" class="imgt">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-success">Manage Session</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+ </div>
+
+
+</div>
+

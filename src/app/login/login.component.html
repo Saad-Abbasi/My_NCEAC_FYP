@@ -1,0 +1,107 @@
+<div class="container-fluid bgstyle">
+  <div >
+    <div class="row">
+      <div class="col-2  pt-1"> 
+        <img class="top-nav" src="/assets/images/nceac.png" height="125" width="150">
+      </div>
+      <div class="col">
+          <marquee class="pt-2"><h6 class="news"><pre></pre>Project External Expected On 23rd of Decemeber 2019<span style="padding-left:290px"></span> Information Technology (CS&IT) is one of the established
+              constitute units of the Faculty of Sciences, University of Azad Jammu and Kashmir (UAJ&K).</h6></marquee>
+       </div>
+    </div>
+   </div>
+  <div class="row  ">
+    <div class="col"></div>
+    <div class="col-12 ">
+      <!-- <img class="top-nav" src="/assets/images/head-hec.png"> -->
+    </div>
+    <div class="col"></div>
+  </div>
+  <div class="container ">
+    <div class="row">
+      <div class="col-8 ">
+        <!-- <marquee behavior="scroll" direction="left" scrollamount="2" class="h4">The University Of Azad kasmir News Feed
+        </marquee><br><br>
+        <marquee behavior="scroll" direction="up" scrollamount="2" class="marquee2">The Department Computer Science and
+          Information Technology (CS&IT) is
+          one of the established
+          constitute units of the Faculty of Sciences, University of Azad Jammu and Kashmir (UAJ&K).
+          it`s history dates back to 1991, when Computer Center was established at the UAJ&K
+          with the objective of producing IT professionals to fulfill immediate demand of IT
+          industry by offering Postgraduate Diploma program in Computer Science
+          In the year 2000, the Computer Center was upgraded to the Department of CS&IT to develop IT professionals of
+          International standard. Initially, the Department started MCS and BS (CS) programs. In 2011, the Department
+          started MS (CS) and in 2012 PHD program in Computer Sciences.
+          The BS (CS) program of the Department is accredited from National Computing Educational Accreditation Council
+          (NCEAC) in X-category.
+          The accreditation visits by NCEAC teams are program BSCS. The evaluate on the basis of different Performa that
+          the faculty members are obliged provide before their visit.
+
+
+
+        </marquee> -->
+      </div>
+      <div class="float-right col-4 pt-4">
+        <div class="card ">
+          <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class=" card-header ">
+            <div class="form-group ">
+              <img class="avtar" src="assets/images/login.png">
+            </div>
+
+            <div class="form-group  ">
+              <div class="input-group align-center pt-2 align-center">
+                <label></label>  
+                <label><input type="radio" formControlName="usertype" value="admin" [ngClass]="{ 'is-invalid': submitted && f.usertype.errors }" /> Admin </label>&nbsp; 
+                <label><input type="radio" formControlName="usertype" value="teacher" [ngClass]="{ 'is-invalid': submitted && f.usertype.errors }" /> Teacher</label>
+               
+                <!-- <label ><input type="radio" id="admin" value="admin" class="ml-5 mr-2" 
+                    formControlName="usertype" [ngClass]="{ 'is-invalid': submitted && f.usertype.errors }">Admin</label><label></label><input type="radio" id="teacher" value="teacher"
+                     -->
+                     <div *ngIf="submitted && f.usertype.errors" class="invalid-feedback">
+                      <div *ngIf="f.usertype.errors.required">User type is required</div>
+                   </div>
+              </div>
+            </div>
+            <div class="form-group ">
+              <div class="input-group">
+                <i class="fa fa-user fa-2x user-icon fa-fw" aria-hidden="true"></i>
+                <input type="text" class="form-control " id="email" placeholder=" Enter Email"
+                  formControlName="t_email"  [ngClass]="{ 'is-invalid': submitted && f.t_email.errors }">
+                  <div *ngIf="submitted && f.t_email.errors" class="invalid-feedback">
+                    <div *ngIf="f.t_email.errors.required">Email is required</div>
+                    <div *ngIf="f.t_email.errors.email">Email must be a valid email address</div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <i class="fa fa-unlock fa-2x fa-fw"></i>
+                <input type="password" required class="form-control" id="pswd" placeholder="Enter Password"
+                  formControlName="t_pswd"[ngClass]="{ 'is-invalid': submitted && f.t_pswd.errors }"/>
+                  <div *ngIf="submitted && f.t_pswd.errors" class="invalid-feedback">
+                    <div *ngIf="f.t_pswd.errors.required">Password is required</div>
+                    <div *ngIf="f.t_pswd.errors.minlength">Password must be at least 3 characters</div>
+                </div>
+              </div>
+                <div class="invalid-feedback">
+                  Password Must be at least 5 characters
+                </div>
+              
+
+            </div>
+            <p class="input-group text-black ">
+              <button type="submit" class="btn btn-primary btn-small">Login </button> 
+            </p>
+          </form>
+
+        </div>
+        <div class="col">
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

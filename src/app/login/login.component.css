@@ -1,0 +1,83 @@
+.bgstyle{
+    height: 600px;
+    width: 1349px;
+    background-size: cover;
+    background: url(/assets/images/background-1.png)no-repeat ;
+    
+    
+}
+.avtar{
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+     
+}
+.input-icon{
+    float: left;
+}
+
+i{
+    background-color:aqua;
+}
+.text{
+    background-color: whitesmoke;
+}
+.btn {
+    margin-right: 7px;
+}
+a{
+    margin-left: 4px;
+}
+.top-nav{
+    
+    height: 65%;
+    width:1500;
+    size: cover;
+    border-radius: 5%;
+   background-repeat: no-repeat;
+   margin-bottom:1px;
+}
+.marquee2{
+    text-decoration-color: cadetblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18;
+}
+.h4{
+    font-size: 3em;
+    color: limegreen;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+}
+.image-size{
+    height: 200px;
+    
+    
+}
+.card{
+    
+    border-radius: 5%;
+    background-blend-mode: screen;
+    background: transparent;
+    color:black;
+   border-left: springgreen solid 5px;
+  
+}
+.news{
+    text-decoration-color: cadetblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18;
+}
+.latest{ 
+    margin-top: 15px;
+    height:30px;
+    width: 120px;
+    padding-left: 4px;
+    
+}

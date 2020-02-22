@@ -1,0 +1,17 @@
+.nv{
+    width: 10%;
+}
+.name{
+    float: left;
+    
+}
+.pic{
+    float: right;
+}
+.dshbrd{
+    scroll-padding-left: 0px;
+}
+.bg
+{
+    background-color: aquamarine;
+}
